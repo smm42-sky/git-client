@@ -23,6 +23,11 @@
             <artifactId>cbs-spring-boot-starter-extensions</artifactId>
             <version>1.0.122</version>
         </dependency>
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-ui</artifactId>
+            <version>1.7.0</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>
