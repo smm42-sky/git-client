@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.ssm.git_client.GitClient;
 import com.ssm.git_client.common.Component;
 import com.ssm.git_client.model.MergeRequestResponse;
+import com.ssm.git_client.model.ReportByUser;
 import com.ssm.git_client.model.ReportRequest;
 
 import lombok.RequiredArgsConstructor;
@@ -76,7 +77,7 @@ public class GitServiceImpl implements GitService {
     }
 
     @Override
-    public List<String> getReportByUser(ReportRequest request) {
+    public List<String> getReportByUser(ReportByUser request) {
         Component component = request.getComponent();
         List<MergeRequestResponse> mergeRequests =
                 gitClient.getMergeRequestIds(

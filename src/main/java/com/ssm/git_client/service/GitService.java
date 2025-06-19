@@ -1,5 +1,6 @@
 package com.ssm.git_client.service;
 
+import com.ssm.git_client.model.ReportByUser;
 import com.ssm.git_client.model.ReportRequest;
 
 import java.util.List;
@@ -11,5 +12,5 @@ public interface GitService {
 
     void getAllReport(String fromDate);
 
-    List<String> getReportByUser(ReportRequest request);
+    List<String> getReportByUser(ReportByUser request);
 }
